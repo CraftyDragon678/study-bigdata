@@ -1,0 +1,16 @@
+{
+  "main": "node.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "type": "module",
+  "dependencies": {
+    "axios": "^0.22.0",
+    "danfojs-node": "^0.3.3",
+    "fetch": "^1.1.0",
+    "proj4": "^2.7.5"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.14.0"
+  }
+}
