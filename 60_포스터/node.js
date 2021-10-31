@@ -1,24 +1,26 @@
+// @ts-check
+
 import axios from 'axios';
-// import proj4 from 'proj4';
-// import dfd from 'danfojs-node';
-// import path from 'path';
-// import fs from 'fs';
+import proj4 from 'proj4';
+import dfd from 'danfojs-node';
+import path from 'path';
+import fs from 'fs';
 
 axios.interceptors.response.use(undefined, async (error) => {
   const originalRequestConfig = error.config;
 
-  return new Promise((resolve) => setTimeout(resolve, 1e3)).then(() =>
+  return new Promise((resolve) => setTimeout(resolve, 1e4)).then(() =>
     axios.request(originalRequestConfig),
   );
 });
 
-// proj4.defs([
-//   [
-//     'EPSG:5181',
-//     '+proj=tmerc +lat_0=38 +lon_0=127 +k=1 +x_0=200000 +y_0=500000 +ellps=GRS80 +units=m +no_defs',
-//   ],
-//   ['EPSG:4326', '+proj=longlat +ellps=WGS84 +no_defs'],
-// ]);
+proj4.defs([
+  [
+    'EPSG:5181',
+    '+proj=tmerc +lat_0=38 +lon_0=127 +k=1 +x_0=200000 +y_0=500000 +ellps=GRS80 +units=m +no_defs',
+  ],
+  ['EPSG:4326', '+proj=longlat +ellps=WGS84 +no_defs'],
+]);
 
 const fetchTile = async (query, x, y, zoom = 7) => {
   const { data } = await axios.get(
@@ -32,6 +34,7 @@ const fetchTile = async (query, x, y, zoom = 7) => {
     },
   );
 
+  // @ts-ignore
   return data.map((d) => ({
     ...d,
     lat: proj4('EPSG:5181', 'EPSG:4326', [d['x'] * 0.4, d['y'] * 0.4])[0],
@@ -72,7 +75,7 @@ const fetchRangeTile = async (
   return df;
 };
 
-(async () => {
+const parseHogangnono = async () => {
   // await Promise.all(
   //   ['도서관', '영화관', '미술관', '공연장', '놀이동산', '노래방'].map(
   //     async (query) => {
@@ -99,11 +102,35 @@ const fetchRangeTile = async (
         // 'x-hogangnono-event-log': '4b853af45ccc037a01f9cecfa4da9777d8e203fe',
         // 'x-hogangnono-ct': '1634177631135',
         // 'x-hogangnono-event-duration': '469340',
-        'x-hogangnono-ct': 1634178344318,
-        'x-hogangnono-event-duration': 589220,
+        'x-hogangnono-ct': '1634178344318',
+        'x-hogangnono-event-duration': '589220',
         'x-hogangnono-event-log': 'ccc973e888a7c11340c566475b597b98e3f1be06',
       },
     },
   );
   console.log(data);
+};
+
+(async () => {
+  const queries = [
+    '공연장',
+    '노래방',
+    '놀이동산',
+    '도서관',
+    '미술관',
+    '영화관',
+  ];
+  await queries.reduce(async (prev, query) => {
+    // 155, 4
+    // 1, 127
+    await prev;
+    const df = await fetchRangeTile(query, 1, 155, 4, 127);
+    const fileName = path.join(
+      '/Users/craftydragon678/Documents/study/study-bigdata/60_포스터',
+      `${query}.csv`,
+    );
+    const str = df.to_csv({ sep: '\t' });
+    if (!str) return;
+    fs.writeFileSync(fileName, str);
+  }, Promise.resolve());
 })();
