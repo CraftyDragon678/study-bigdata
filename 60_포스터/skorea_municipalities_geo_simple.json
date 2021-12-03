@@ -552,7 +552,7 @@
       "type": "Feature",
       "properties": {
         "code": "38340",
-        "name": "고성군",
+        "name": "경상고성군",
         "name_eng": "Goseong-gun",
         "base_year": "2013"
       },
@@ -7440,7 +7440,7 @@
       "type": "Feature",
       "properties": {
         "code": "32400",
-        "name": "고성군",
+        "name": "강원고성군",
         "name_eng": "Goseong-gun",
         "base_year": "2013"
       },
@@ -10526,7 +10526,7 @@
       "type": "Feature",
       "properties": {
         "code": "26040",
-        "name": "북구",
+        "name": "부산북구",
         "name_eng": "Buk-gu",
         "base_year": "2013"
       },
@@ -10559,7 +10559,7 @@
       "type": "Feature",
       "properties": {
         "code": "26030",
-        "name": "동구",
+        "name": "울산동구",
         "name_eng": "Dong-gu",
         "base_year": "2013"
       },
@@ -10586,7 +10586,7 @@
       "type": "Feature",
       "properties": {
         "code": "26020",
-        "name": "남구",
+        "name": "울산남구",
         "name_eng": "Nam-gu",
         "base_year": "2013"
       },
@@ -10614,7 +10614,7 @@
       "type": "Feature",
       "properties": {
         "code": "26010",
-        "name": "중구",
+        "name": "울산중구",
         "name_eng": "Jung-gu",
         "base_year": "2013"
       },
@@ -10710,7 +10710,7 @@
       "type": "Feature",
       "properties": {
         "code": "25030",
-        "name": "서구",
+        "name": "대전서구",
         "name_eng": "Seo-gu",
         "base_year": "2013"
       },
@@ -10743,7 +10743,7 @@
       "type": "Feature",
       "properties": {
         "code": "25020",
-        "name": "중구",
+        "name": "대전중구",
         "name_eng": "Jung-gu",
         "base_year": "2013"
       },
@@ -10773,7 +10773,7 @@
       "type": "Feature",
       "properties": {
         "code": "25010",
-        "name": "동구",
+        "name": "대전동구",
         "name_eng": "Dong-gu",
         "base_year": "2013"
       },
@@ -10855,7 +10855,7 @@
       "type": "Feature",
       "properties": {
         "code": "24040",
-        "name": "북구",
+        "name": "광주북구",
         "name_eng": "Buk-gu",
         "base_year": "2013"
       },
@@ -10892,7 +10892,7 @@
       "type": "Feature",
       "properties": {
         "code": "24030",
-        "name": "남구",
+        "name": "광주남구",
         "name_eng": "Nam-gu",
         "base_year": "2013"
       },
@@ -10922,7 +10922,7 @@
       "type": "Feature",
       "properties": {
         "code": "24020",
-        "name": "서구",
+        "name": "광주서구",
         "name_eng": "Seo-gu",
         "base_year": "2013"
       },
@@ -10952,7 +10952,7 @@
       "type": "Feature",
       "properties": {
         "code": "24010",
-        "name": "동구",
+        "name": "광주동구",
         "name_eng": "Dong-gu",
         "base_year": "2013"
       },
@@ -11173,7 +11173,7 @@
       "type": "Feature",
       "properties": {
         "code": "23080",
-        "name": "서구",
+        "name": "인천서구",
         "name_eng": "Seo-gu",
         "base_year": "2013"
       },
@@ -11325,7 +11325,7 @@
       "type": "Feature",
       "properties": {
         "code": "23030",
-        "name": "남구",
+        "name": "미추홀구",
         "name_eng": "Nam-gu",
         "base_year": "2013"
       },
@@ -11353,7 +11353,7 @@
       "type": "Feature",
       "properties": {
         "code": "23020",
-        "name": "동구",
+        "name": "인천동구",
         "name_eng": "Dong-gu",
         "base_year": "2013"
       },
@@ -11375,7 +11375,7 @@
       "type": "Feature",
       "properties": {
         "code": "23010",
-        "name": "중구",
+        "name": "인천중구",
         "name_eng": "Jung-gu",
         "base_year": "2013"
       },
@@ -11572,7 +11572,7 @@
       "type": "Feature",
       "properties": {
         "code": "22050",
-        "name": "북구",
+        "name": "대구북구",
         "name_eng": "Buk-gu",
         "base_year": "2013"
       },
@@ -11604,7 +11604,7 @@
       "type": "Feature",
       "properties": {
         "code": "22040",
-        "name": "남구",
+        "name": "대구남구",
         "name_eng": "Nam-gu",
         "base_year": "2013"
       },
@@ -11627,7 +11627,7 @@
       "type": "Feature",
       "properties": {
         "code": "22030",
-        "name": "서구",
+        "name": "대구서구",
         "name_eng": "Seo-gu",
         "base_year": "2013"
       },
@@ -11650,7 +11650,7 @@
       "type": "Feature",
       "properties": {
         "code": "22020",
-        "name": "동구",
+        "name": "대구동구",
         "name_eng": "Dong-gu",
         "base_year": "2013"
       },
@@ -11689,7 +11689,7 @@
       "type": "Feature",
       "properties": {
         "code": "22010",
-        "name": "중구",
+        "name": "대구중구",
         "name_eng": "Jung-gu",
         "base_year": "2013"
       },
@@ -11830,7 +11830,7 @@
       "type": "Feature",
       "properties": {
         "code": "21120",
-        "name": "강서구",
+        "name": "부산강서구",
         "name_eng": "Gangseo-gu",
         "base_year": "2013"
       },
@@ -11960,7 +11960,7 @@
       "type": "Feature",
       "properties": {
         "code": "21080",
-        "name": "북구",
+        "name": "부산북구",
         "name_eng": "Buk-gu",
         "base_year": "2013"
       },
@@ -11985,7 +11985,7 @@
       "type": "Feature",
       "properties": {
         "code": "21070",
-        "name": "남구",
+        "name": "부산남구",
         "name_eng": "Nam-gu",
         "base_year": "2013"
       },
@@ -12089,7 +12089,7 @@
       "type": "Feature",
       "properties": {
         "code": "21030",
-        "name": "동구",
+        "name": "부산동구",
         "name_eng": "Dong-gu",
         "base_year": "2013"
       },
@@ -12112,7 +12112,7 @@
       "type": "Feature",
       "properties": {
         "code": "21020",
-        "name": "서구",
+        "name": "부산서구",
         "name_eng": "Seo-gu",
         "base_year": "2013"
       },
@@ -12137,7 +12137,7 @@
       "type": "Feature",
       "properties": {
         "code": "21010",
-        "name": "중구",
+        "name": "부산중구",
         "name_eng": "Jung-gu",
         "base_year": "2013"
       },
@@ -12396,7 +12396,7 @@
       "type": "Feature",
       "properties": {
         "code": "11160",
-        "name": "강서구",
+        "name": "서울강서구",
         "name_eng": "Gangseo-gu",
         "base_year": "2013"
       },
@@ -12749,7 +12749,7 @@
       "type": "Feature",
       "properties": {
         "code": "11020",
-        "name": "중구",
+        "name": "서울중구",
         "name_eng": "Jung-gu",
         "base_year": "2013"
       },
